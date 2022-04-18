@@ -32,20 +32,34 @@
 
 <script>
 import { defineAsyncComponent } from "vue";
+import { mapGetters } from "vuex";
 export default {
+  props: {
+    id: {
+      type: String,
+      required: true
+    }
+  },
   components: {
     Fab: defineAsyncComponent(() => import("../components/Fab.vue")),
   },
-  data() {
-    return {
-      title: "Bse",
-      day: "15",
-      date: "30/10/2020",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptas cumque aut dolor eius beatae laudantium. Maiores repudiandae quas ullam sapiente eum aliquam laborum iure rerum. Nisi dolorum dolores nam.",
-      isEditing: false,
-    };
+  created() {
+    console.log(this.getEntryById(this.$route.params.id));
   },
+  methods: {
+    // ...mapGetters( 'journal', ['getEntryById']),
+    // entry() {
+    //   return this.getEntryById(this.$route.params.id);
+    // },
+  },
+  computed: {
+    ...mapGetters( 'journal', ['getEntryById']),
+    entry() {
+      return this.getEntryById(this.$route.params.id);
+    },
+  },
+
+
 };
 </script>
 
