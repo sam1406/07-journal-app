@@ -5,13 +5,13 @@ export default () => ({
     entries: [
         {
             id: '1',
-            text: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
+            text: 'primero ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
             date: new Date().toDateString(),
             picture: 'https://picsum.photos/200/300',
         },
         {
             id: '2',
-            text: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
+            text: 'segumdpo ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
             date: new Date().toDateString(),
             picture: 'https://picsum.photos/200/300',
         },

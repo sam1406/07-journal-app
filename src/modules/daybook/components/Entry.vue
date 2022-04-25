@@ -23,9 +23,6 @@ export default {
         }
     },
     computed:{
-        title(){
-            return this.entry.date;
-        },
         shortText(){
             return (this.entry.text.length > 100) ? this.entry.text.substring(0, 100) + '...' : this.entry.text;
         },

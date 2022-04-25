@@ -9,5 +9,8 @@ export const getEntryByTerm  = (state)=> (term) => {
 }
 
 export const getEntryById  = (state) => (id) => {
-    return state.entries.find(entry => entry.id === id)
+    const entry = state.entries.find(entry => entry.id === id);
+    if(!entry) return
+
+    return {...entry}
 }
